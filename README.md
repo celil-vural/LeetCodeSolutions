@@ -13,6 +13,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0040-combination-sum-ii](https://github.com/celil-vural/LeetCodeSolutions/tree/master/0040-combination-sum-ii) |
 | [0041-first-missing-positive](https://github.com/celil-vural/LeetCodeSolutions/tree/master/0041-first-missing-positive) |
 | [0042-trapping-rain-water](https://github.com/celil-vural/LeetCodeSolutions/tree/master/0042-trapping-rain-water) |
+| [0045-jump-game-ii](https://github.com/celil-vural/LeetCodeSolutions/tree/master/0045-jump-game-ii) |
 ## Binary Search
 |  |
 | ------- |
@@ -57,6 +58,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0042-trapping-rain-water](https://github.com/celil-vural/LeetCodeSolutions/tree/master/0042-trapping-rain-water) |
 | [0044-wildcard-matching](https://github.com/celil-vural/LeetCodeSolutions/tree/master/0044-wildcard-matching) |
+| [0045-jump-game-ii](https://github.com/celil-vural/LeetCodeSolutions/tree/master/0045-jump-game-ii) |
 ## Stack
 |  |
 | ------- |
@@ -77,6 +79,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0044-wildcard-matching](https://github.com/celil-vural/LeetCodeSolutions/tree/master/0044-wildcard-matching) |
+| [0045-jump-game-ii](https://github.com/celil-vural/LeetCodeSolutions/tree/master/0045-jump-game-ii) |
 ## Recursion
 |  |
 | ------- |
