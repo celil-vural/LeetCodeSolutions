@@ -12,6 +12,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0039-combination-sum](https://github.com/celil-vural/LeetCodeSolutions/tree/master/0039-combination-sum) |
 | [0040-combination-sum-ii](https://github.com/celil-vural/LeetCodeSolutions/tree/master/0040-combination-sum-ii) |
 | [0041-first-missing-positive](https://github.com/celil-vural/LeetCodeSolutions/tree/master/0041-first-missing-positive) |
+| [0042-trapping-rain-water](https://github.com/celil-vural/LeetCodeSolutions/tree/master/0042-trapping-rain-water) |
 ## Binary Search
 |  |
 | ------- |
@@ -45,4 +46,20 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0038-count-and-say](https://github.com/celil-vural/LeetCodeSolutions/tree/master/0038-count-and-say) |
+## Two Pointers
+|  |
+| ------- |
+| [0042-trapping-rain-water](https://github.com/celil-vural/LeetCodeSolutions/tree/master/0042-trapping-rain-water) |
+## Dynamic Programming
+|  |
+| ------- |
+| [0042-trapping-rain-water](https://github.com/celil-vural/LeetCodeSolutions/tree/master/0042-trapping-rain-water) |
+## Stack
+|  |
+| ------- |
+| [0042-trapping-rain-water](https://github.com/celil-vural/LeetCodeSolutions/tree/master/0042-trapping-rain-water) |
+## Monotonic Stack
+|  |
+| ------- |
+| [0042-trapping-rain-water](https://github.com/celil-vural/LeetCodeSolutions/tree/master/0042-trapping-rain-water) |
 <!---LeetCode Topics End-->
