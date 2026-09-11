@@ -46,6 +46,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0038-count-and-say](https://github.com/celil-vural/LeetCodeSolutions/tree/master/0038-count-and-say) |
+| [0043-multiply-strings](https://github.com/celil-vural/LeetCodeSolutions/tree/master/0043-multiply-strings) |
 ## Two Pointers
 |  |
 | ------- |
@@ -62,4 +63,12 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0042-trapping-rain-water](https://github.com/celil-vural/LeetCodeSolutions/tree/master/0042-trapping-rain-water) |
+## Math
+|  |
+| ------- |
+| [0043-multiply-strings](https://github.com/celil-vural/LeetCodeSolutions/tree/master/0043-multiply-strings) |
+## Simulation
+|  |
+| ------- |
+| [0043-multiply-strings](https://github.com/celil-vural/LeetCodeSolutions/tree/master/0043-multiply-strings) |
 <!---LeetCode Topics End-->
