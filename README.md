@@ -7,8 +7,17 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0035-search-insert-position](https://github.com/celil-vural/LeetCodeSolutions/tree/master/0035-search-insert-position) |
+| [0036-valid-sudoku](https://github.com/celil-vural/LeetCodeSolutions/tree/master/0036-valid-sudoku) |
 ## Binary Search
 |  |
 | ------- |
 | [0035-search-insert-position](https://github.com/celil-vural/LeetCodeSolutions/tree/master/0035-search-insert-position) |
+## Hash Table
+|  |
+| ------- |
+| [0036-valid-sudoku](https://github.com/celil-vural/LeetCodeSolutions/tree/master/0036-valid-sudoku) |
+## Matrix
+|  |
+| ------- |
+| [0036-valid-sudoku](https://github.com/celil-vural/LeetCodeSolutions/tree/master/0036-valid-sudoku) |
 <!---LeetCode Topics End-->
