@@ -1,25 +1,17 @@
 func firstMissingPositive(nums []int) int {
-	slices.Sort(nums)
-	missing, zeroCursor := 0, 0
-	for i := range nums {
-		if nums[i] <= 0 {
-			zeroCursor++
-			continue
+	n := len(nums)
+	for i := 0; i < n; i++ {
+		for nums[i] >= 1 &&
+			nums[i] <= n &&
+			nums[nums[i]-1] != nums[i] {
+			j := nums[i] - 1
+			nums[i], nums[j] = nums[j], nums[i]
 		}
-		if i == zeroCursor && nums[i] != 1 {
-			return 1
-		}
-		if i > zeroCursor && nums[i] == nums[i-1] {
-			continue
-		}
-		if nums[i] != missing+1 {
-			return missing + 1
-		}
-		missing = nums[i]
 	}
-	res := nums[len(nums)-1]
-	if res < 0 {
-		res = 0
+	for i := 0; i < n; i++ {
+		if nums[i] != i+1 {
+			return i + 1
+		}
 	}
-	return res + 1
+	return n + 1
 }
