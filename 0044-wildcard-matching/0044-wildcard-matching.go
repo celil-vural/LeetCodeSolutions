@@ -1,44 +1,37 @@
 func isMatch(s string, p string) bool {
 	sArray := []rune(s)
 	pArray := []rune(p)
-	// 0 = unknown
-	// 1 = true
-	// 2 = false
-	memo := make(map[[2]int]uint8)
 
-	var match func(sCursor, pCursor int) bool
+	sCursor := 0
+	pCursor := 0
 
-	match = func(sCursor, pCursor int) bool {
-		key := [2]int{sCursor, pCursor}
+	starIndex := -1
+	matchIndex := 0
 
-		if result, ok := memo[key]; ok {
-			return result == 1
+	for sCursor < len(sArray) {
+		if pCursor < len(pArray) &&
+			(pArray[pCursor] == '?' || pArray[pCursor] == sArray[sCursor]) {
+			sCursor++
+			pCursor++
+			continue
 		}
-		if pCursor == len(pArray) {
-			result := sCursor == len(sArray)
-			if result {
-				memo[key] = 1
-			} else {
-				memo[key] = 2
-			}
-			return result
+		if pCursor < len(pArray) && pArray[pCursor] == '*' {
+			starIndex = pCursor
+			matchIndex = sCursor
+			pCursor++
+			continue
 		}
-		var result bool
-		if pArray[pCursor] == '*' {
-			result = match(sCursor, pCursor+1)
-			if !result && sCursor < len(sArray) {
-				result = match(sCursor+1, pCursor)
-			}
-		} else if sCursor < len(sArray) &&
-			(pArray[pCursor] == '?' || sArray[sCursor] == pArray[pCursor]) {
-			result = match(sCursor+1, pCursor+1)
+
+		if starIndex != -1 {
+			matchIndex++
+			sCursor = matchIndex
+			pCursor = starIndex + 1
+			continue
 		}
-		if result {
-			memo[key] = 1
-		} else {
-			memo[key] = 2
-		}
-		return result
+		return false
 	}
-	return match(0, 0)
+	for pCursor < len(pArray) && pArray[pCursor] == '*' {
+		pCursor++
+	}
+	return pCursor == len(pArray)
 }
