@@ -1,32 +1,28 @@
 func permuteUnique(nums []int) [][]int {
-	if len(nums) == 0 {
-		return [][]int{{}}
-	}
+	sort.Ints(nums)
 	var result [][]int
-	for i, num := range nums {
-		subset := append([]int(nil), nums[:i]...)
-		subset = append(subset, nums[i+1:]...)
-		for _, p := range permuteUnique(subset) {
-			temp := append([]int{num}, p...)
-			if !isExistInSlice(result, temp) {
-				result = append(result, temp)
+	current := make([]int, 0, len(nums))
+	used := make([]bool, len(nums))
+	var backtrack func()
+	backtrack = func() {
+		if len(current) == len(nums) {
+			result = append(result, append([]int(nil), current...))
+			return
+		}
+		for i := 0; i < len(nums); i++ {
+			if used[i] {
+				continue
 			}
+			if i > 0 && nums[i] == nums[i-1] && !used[i-1] {
+				continue
+			}
+			used[i] = true
+			current = append(current, nums[i])
+			backtrack()
+			current = current[:len(current)-1]
+			used[i] = false
 		}
 	}
+	backtrack()
 	return result
-}
-func isExistInSlice(slice [][]int, value []int) bool {
-	for _, v := range slice {
-		exists := true
-		for i := range v {
-			if v[i] != value[i] {
-				exists = false
-				break
-			}
-		}
-		if exists {
-			return true
-		}
-	}
-	return false
 }
